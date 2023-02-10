@@ -91,6 +91,204 @@ namespace TestTriangle
                 //Assert
                 Assert.AreEqual(expected, actual);
             }
+            [Test]
+
+            public void AnalyzeTriangle_ScaleneTriangle()
+            {
+                //Arrange
+                int firstSide = 2;
+                int secondSide = 3;
+                int thirdSide = 4;
+
+                string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+
+                //Act
+                string actual = testObject.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
+
+            [Test]
+
+            public void AnalyzeTriangle_1_ScaleneTriangle()
+            {
+                //Arrange
+                int firstSide = 14;
+                int secondSide = 13;
+                int thirdSide = 9;
+
+                string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+
+                //Act
+                string actual = testObject.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
+
+            [Test]
+
+            public void AnalyzeTriangle_2_ScaleneTriangle()
+            {
+                //Arrange
+                int firstSide = 9;
+                int secondSide = 13;
+                int thirdSide = 14;
+
+                string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+
+                //Act
+                string actual = testObject.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
+
+            [Test]
+
+            public void AnalyzeTriangle_3_ScaleneTriangle()
+            {
+                //Arrange
+                int firstSide = 15;
+                int secondSide = 34;
+                int thirdSide = 32;
+
+                string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+
+                //Act
+                string actual = testObject.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
+
+            [Test]
+
+            public void AnalyzeTriangle_4_ScaleneTriangle()
+            {
+                //Arrange
+                int firstSide = 29;
+                int secondSide = 36;
+                int thirdSide = 44;
+
+                string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+
+                //Act
+                string actual = testObject.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
+
+            [Test]
+
+            public void AnalyzeTriangle_InvalidTriangle()
+            {
+                //Arrange
+                int firstSide = 0;
+                int secondSide = 3;
+                int thirdSide = 4;
+
+                string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+                //Act
+                string actual = testObject.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
+
+            [Test]
+
+            public void AnalyzeTriangle_2_InvalidTriangle()
+            {
+                //Arrange
+                int firstSide = 0;
+                int secondSide = 0;
+                int thirdSide = 4;
+
+                string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+                //Act
+                string actual = testObject.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
+
+
+            [Test]
+
+            public void AnalyzeTriangle_3_InvalidTriangle()
+            {
+                //Arrange
+                int firstSide = 0;
+                int secondSide = 0;
+                int thirdSide = 0;
+
+                string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+                //Act
+                string actual = testObject.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
+
+            [Test]
+
+            public void AnalyzeTriangle_4_InvalidTriangle()
+            {
+                //Arrange
+                int firstSide = -1;
+                int secondSide = 3;
+                int thirdSide = -4;
+
+                string expected = "Based on the values entered, the triangle is INVALID";
+
+                //Act
+                string actual = testObject.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
+
+            [Test]
+
+            public void AnalyzeTriangle_5_InvalidTriangle()
+            {
+                //Arrange
+                int firstSide = -3;
+                int secondSide = -6;
+                int thirdSide = 7;
+
+                string expected = "Based on the values entered, the triangle is INVALID";
+
+                //Act
+                string actual = testObject.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
+
+            [Test]
+
+            public void AnalyzeTriangle_6_InvalidTriangle()
+            {
+                //Arrange
+                int firstSide = 8;
+                int secondSide = -10;
+                int thirdSide = -8;
+
+                string expected = "Based on the values entered, the triangle is INVALID";
+
+                //Act
+                string actual = testObject.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
         }
     }
 }
