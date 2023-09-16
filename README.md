@@ -1,4 +1,4 @@
-# Project Name - Test Triangle
+# Project Name - NUNIT - Test Triangle
 
 ## Project Description
 This project aims to demonstrate the implementation of unit testing for a software application using popular unit testing frameworks, such as JUnit for Java, NUnit for .NET, or pytest for Python. Unit testing is an essential practice in software development that involves testing individual units of code in isolation to ensure their correctness and robustness.
