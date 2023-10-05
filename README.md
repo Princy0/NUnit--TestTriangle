@@ -62,6 +62,6 @@ dotnet test MyProject.Tests/MyProject.Tests.csproj
 - You can contact me for contributing more prjects : 
 - Email : Princepn029@gmail.com
 - Linkedin : https://www.linkedin.com/in/princeprajapati/
-- Github : https://github.com/Princy0
+- Portfolio : https://princy0.github.io/prince.github.io/
 
 ### "BUY ME A CHAII!"
